@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {Link} from "react-router-dom";
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenuExpand = () => {
@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="ia-header w-full">
       <div className="ia-header__inner flex-between">
-        <a href="#" className="ia__logo" aria-labelledby="logo" title="i2c">
+        <Link to='/' >
           <svg
             width="55"
             height="34"
@@ -38,7 +38,7 @@ const Header = () => {
               />
             </defs>
           </svg>
-        </a>
+        </Link>
         <nav className="ia__links">
           <button
             className="bg-transparent border-0 menu-icon"
@@ -65,10 +65,10 @@ const Header = () => {
               />
             </svg>
           </button>
-          <a href="#" aria-labelledby="about-us">About us</a>
-          <a href="#" aria-labelledby="registration">Registration</a>
-          <a href="#" aria-labelledby="careers">Careers</a>
-          <button className="btn contact-btn bg-blue text-white rounded-40 ms-16 ">
+          <Link to="#">About us</Link>
+          <Link to="#">Registration</Link>
+          <Link to="#">Careers</Link>
+          <button className="btn contact-btn bg-blue text-white rounded-40 ms-16">
             Contact us
           </button>
         </nav>
@@ -93,10 +93,10 @@ const Header = () => {
           </div>
           <div className="menu-expand__links">
             <nav>
-              <a href="">About us</a>
-              <a href="">Registration</a>
-              <a href="">Careers</a>
-              <button className="btn contact-btn bg-blue text-white rounded-40">
+              <Link to="#">About us</Link>
+              <Link to="#">Registration</Link>
+              <Link to="#">Careers</Link>
+              <button className="btn contact-btn bg-blue text-white rounded-40 mb-20">
             Contact us
           </button>
             </nav>

@@ -1,10 +1,10 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="ia-footer" id="footer">
       <div className="ia-footer__inner flex-between py-32">
-        <a href="#" className="ia__logo" aria-labelledby="logo" title="i2c">
+        <Link to="#" className="ia__logo">
           <svg
             width="55"
             height="34"
@@ -34,11 +34,11 @@ const Footer = () => {
               />
             </defs>
           </svg>
-        </a>
+        </Link>
         <nav className="ia__links">
-          <a href="#" aria-labelledby="faqs" title="FAQS">FAQs</a>
-          <a href="#" aria-labelledby="privacy policy" title="Privacy Policy">Privacy Policy</a>
-          <a href="#" aria-labelledby="Other" title="Other">Other</a>
+          <Link to="#">FAQs</Link>
+          <Link to="#">Privacy Policy</Link>
+          <Link to="#">Other</Link>
           <button className="btn contact-btn bg-blue text-white rounded-40 ms-16">Contact us</button>
         </nav>
       </div>

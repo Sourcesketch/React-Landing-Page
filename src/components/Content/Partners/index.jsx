@@ -45,7 +45,7 @@ const Partners = () => {
             <button className="indicators-prev" onClick={prevImg}>
                 <img src={prev} alt="prev"/>
             </button> 
-             <button href="" className="indicators-next" onClick={nextImg}>
+             <button className="indicators-next" onClick={nextImg}>
                 <img src={next} alt="next"/>
             </button> 
         </div>
