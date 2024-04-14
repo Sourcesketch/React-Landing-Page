@@ -1,0 +1,42 @@
+// Typography
+$root_font: 1rem;
+$font-family-regular: 'Inter-Regular';
+$font-family-medium: 'Inter-Medium';
+$font-family-semibold: 'Inter-Semibold';
+$font-family-bold: 'Inter-Bold';
+$font-family-extrabold:'Inter-ExtraBold';
+
+// theme colors 
+$themeColors: (
+    "white": #ffffff,
+    "black": #000000,
+    "dark-gray":#515151,
+    "blue": #46b0e6,
+    "orange": #f89d21,
+    "body-bg": #ebf0ff,
+    "feature-box": #F6FBF8,
+    "input-text-color": #aaaaaa,
+    "input-bg-color": #F9FAFF,
+    "input-border-color": #DEE6FF,
+    "footer-border": #CBCBCB,
+    "danger": #f31010,
+    "success": #20a836,
+    "transparent": transparent
+);
+
+// border radius 
+$borderRadius: (
+    "5": 5,
+    "10": 10,
+    "16": 16,
+    "40": 40,
+);
+
+// positoning elements
+$postions: (
+    "relative": relative,
+    "absolute": absolute,
+    "sticky": sticky,
+    "fixed": fixed,
+);
+
